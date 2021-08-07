@@ -1,41 +1,39 @@
+@font-face {
+    font-family: "marvelregular";
+    src: url("marvel-font/MarvelRegular-Dj83.ttf");
+    }
+
+@font-face {
+    font-family: "heroesassemble";
+    src: url("heroes-assemble-font/HeroesAssembleBoldExpandtalic-qEn1.ttf");
+    }   
+
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-image: url(background.jpg);
-    margin: 0 auto;
+    background-image: radial-gradient(black, rgb(80, 0, 0), rgb(0, 1, 88));
+    background-blend-mode: lighten;
+    margin: auto;
     width: auto;
-    border: 3px dashed rgb(255, 94, 0);
-    border-radius: 30px;
     padding: 0 2em 1em;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 h1 {
-    color:rgb(78, 1, 1);
-    font-size: 20px;
-}
-
-h2 {
-    color: rgb(29, 78, 1);
-    font-size: 20px;
-    font-style: italic;
+    color:rgb(53, 0, 0);
+    font-size: 80%;
 }
 
 h3 {
-    color: rgb(29, 78, 1);
-    text-align: center;
-    font-style: italic;
-    font-size: 15px;
+    color:rgb(78, 1, 1);
+    font-size: 50%;
 }
 
 p {
-    color:rgb(29, 78, 1)
-}
-
-b {
+    color:rgb(0, 0, 0);
     font-variant: small-caps;
 }
 
 .dropshadow {
-    text-shadow: 2px 2px black;
+    text-shadow: 5px 5px black;
 }
 
 .dropshadow-small {
@@ -46,102 +44,177 @@ b {
     color: white;
 }
 
+.radioButton {
+    padding: 0, 0, 0, 50px;
+    margin: 0, 0, 0, 50px;
+}
+
 #answer1.radioButton {
     margin: 0px, 0px, 0px, 50px;
     padding: 0px, 0px, 0px, 50px;
 }
 
 .JumboHeader {
-    color: rgb(185, 18, 18);
-    font-weight: bolder;
+    color: rgb(226, 0, 0);
+    font-family: "heroesassemble";
     background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-image: url(headerBackground.png);
     border-radius: 15px;
     font-size: 50px;
     text-align: center;
 }
 
 .Section {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    background: rgb(253, 152, 152);
+    float: center;
+    width: 80%;
+    height: 500px;
     padding: 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 150px;
 }
+
 .SectionTop {
-    color: rgb(195, 195, 255);
-    display: flex;
+    float: none;
     flex-direction: column;
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     width: 80%;
-    height: 100px;
-    background: rgb(203, 255, 187);
+    height: 20%;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255,0), red);
     padding: 10px;
-    margin: 20px 20px 0px 20px;
-    }
+    margin: 20px 20px 0px 100px;
+}
 
 .SectionAnswerOptions {
     color: rgb(0, 0, 0);
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 20px;
+    text-align: left;
+    font-size: 30px;
     width: 80%;
-    height: 100px;
-    background: rgb(255, 239, 239);
-    padding: 10px;
-    margin: 0px 20px 0px 20px;
-    }
+    height: 40%;
+    background-image: url(white.jpg);
+    background-repeat: no-repeat;
+    background-size: 816px;
+    padding: 30px;
+    margin: 0px 10px 0px 90px;
+}
 
 .SectionBottom {
-    float: center;
-    text-align: left;
+    float: none;
+    text-align: right;
     font-size: 15px;
     width: 80%;
-    height: 25px;
-    background: rgb(155, 218, 255);
+    height: 10%;
+    background-image: linear-gradient(180deg, red, rgba(255, 255, 255, 0));
     padding: 10px;
-    margin: 0px 20px 20px 20px;
-    }
-
-.Bonus {
-    position: bottom;
-    bottom: 0;
-    width: 90%;
-    height: 20%;
-    text-align: center;
-    font-size: 26px;
-    /* background: rgb(235, 255, 56); */
-    padding: 10px;
-    margin: 20px 20px 5px 10px;
+    margin: 0px 20px 20px 100px;
 }
-/* .wrapper {
-    color: white;
-    font-family: helvetica, arial, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(12, 200px);
-    background-color: rgb(255, 255, 255, 0.75);
-    color: rgb(70, 69, 69, 0.5);
-  } */
 
 @media (max-width: 600px) {
     
-    .container {
+    @font-face {
+        font-family: "marvelregular";
+        src: url("marvel-font/MarvelRegular-Dj83.ttf");
+        }
+    
+    @font-face {
+        font-family: "heroesassemble";
+        src: url("heroes-assemble-font/HeroesAssembleBoldExpandtalic-qEn1.ttf");
+        }   
+    
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+        background-image: radial-gradient(black, rgb(80, 0, 0), rgb(0, 1, 88));
+        background-blend-mode: lighten;
+        margin: auto;
+        width: auto;
+        padding: 0 2em 1em;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    h1 {
+        color:rgb(53, 0, 0);
+        font-size: 80%;
+    }
+    
+    h3 {
+        color:rgb(78, 1, 1);
+        font-size: 50%;
+    }
+    
+    p {
+        color:rgb(0, 0, 0);
+        font-variant: small-caps;
+    }
+    
+    .dropshadow {
+        text-shadow: 5px 5px black;
+    }
+
+    .submitButton {
+        text-align: center;
         color: white;
-        font-family: helvetica, arial, sans-serif;
-        display: inline;
-        background-color: rgb(255, 255, 255, 0.75);
-        grid-template-columns: 1;
-      }
+    }
     
-    .Column {
-        display: flex;
-        flex-direction: column;
-        width: 33%;
-        background: rgb(253, 152, 152);
+    .radioButton {
+        padding: 0, 0, 0, 10px;
+        margin: 0, 0, 0, 10px;
+    }
+    
+    #answer1.radioButton {
+        margin: 0px, 0px, 0px, 10px;
+        padding: 0px, 0px, 0px, 10px;
+    }
+    
+    .JumboHeader {
+        color: rgb(226, 0, 0);
+        font-family: "heroesassemble";
+        background-color: rgba(255, 255, 255, 0.5);
+        background-blend-mode: lighten;
+        background-image: url(headerBackground.png);
+        border-radius: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .Section {
+        float: center;
+        width: 80%;
+        height: 500px;
         padding: 10px;
-        margin: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 0px;
     }
     
+    .SectionTop {
+        float: left;
+        text-align: center;
+        font-size: 30px;
+        width: 95%;
+        height: auto;
+        background-image: linear-gradient(180deg, rgb(255, 255, 255,0), red);
+        padding: 10px;
+        margin: 20px 20px 0px 40px;
     }
+    
+    .SectionAnswerOptions {
+        color: rgb(0, 0, 0);
+        float: left;
+        text-align: left;
+        font-size: 30px;
+        width: 95%;
+        height: auto;
+        background: rgb(255, 239, 239);
+        padding: 10px;
+        margin: 0px 20px 0px 40px;
+    }
+    
+    .SectionBottom {
+        float: left;
+        text-align: right;
+        font-size: 15px;
+        width: 95%;
+        height: 10%;
+        background-image: linear-gradient(180deg, red, rgba(255, 255, 255, 0));
+        padding: 10px;
+        margin: 0px 20px 20px 40px;
+    }
+}
